@@ -1,5 +1,17 @@
-let express = require("express");
+const express = require("express");
+const path = require("path");
 
-let app = express(); 
+const app = express(); 
 
-console.log(app);
+const publicPath = path.resolve(__dirname, "./public")
+// Espectificamos en donde estara la ruta de archivos estaticos 
+
+app.use(express.static(publicPath))
+
+app.listen(3000, () => {
+    console.log("Servidor corriendo en el puerto 3000")
+})
+
+app.get("/", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "./views/home.html"));
+})
