@@ -1,39 +1,151 @@
-body {
-    font-family: 'Lato', sans-serif;;
-}
 
-h1 {
-    font-size: 50px;
-    font-weight: 300;
-}
 
-h2 {
-    font-size: 20px;
-}
 
-p {
-    font-size: 17px;
-    line-height: 24px;
-}
+/* Todo la página */
 
-.parrafo-destacado {
-    color: salmon;
-    font-size: 30px;
-    line-height: 38px;
+
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
 }
 
 
-.parrafo-destacado em {
-    color: red;
-    text-transform: uppercase;
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 
-p strong {
-    background-color:orange;
-    color: white;
-    font-style: italic;
+ 
+p{
+    font-size: 12px;
 }
 
-strong {
-    color: green;
+h3{
+    font-size: 24px;
 }
+
+
+
+
+/* Header*/
+
+    /* General*/
+
+    
+    header{
+        background-color: #EAC926;
+    }
+    
+
+    /* Especificos*/
+
+
+        /* Parte más alta del header*/
+
+        header.HeaderUp p {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Barra de navegación*/
+
+        li a {
+            text-decoration: none;
+            color: #03264C;
+            font-size:12px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        li a i {
+            font-size: 2em;
+            color: #03264C;
+        }
+
+        /* Burguer menu*/
+
+        div.burger-menu{
+            text-align: center;
+        }
+
+        
+        div.burger-menu i{
+            background-color: #0044AA;
+            border-radius: 5px;
+            color: #FFF;
+            font-size: 20px;
+            height: 40px;
+            margin: 10px 0px 20px 0px;
+            padding: 10px;
+            width: 40px;
+        }
+
+/* banner */
+
+    section.banner img{
+        width: 100%;
+    }
+
+
+
+/* main*/
+
+    /* General*/
+    article div i {
+        font-size: 2em;
+        color: #03264C;
+    }   
+    
+    /* Especificos*/
+    
+    .precio{
+        font-size: 18px;
+        width: 30%;
+    }
+    
+    .descuento,
+    .descripcion{
+    font-size: 16px;
+    font-weight: normal;
+    }
+
+        /* Productos */
+
+
+    
+        /* rebajas*/
+
+
+
+/* Footer*/
+
+    /* General*/
+
+
+    footer {
+        background-color: white;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        padding: 15px;
+    }
+
+    
+    footer div i {
+        font-size: 2em;
+        color: #1259c3;
+    }
+    
+    /* Especificos*/
+
+
