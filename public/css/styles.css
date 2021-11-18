@@ -1,7 +1,4 @@
-
-
-
-/* Todo la página */
+/* Caracterisitcas para todo la página */
 
 
 *{
@@ -23,14 +20,15 @@ p{
 
 h3{
     font-size: 24px;
+    color: #666;
 }
 
 
-
+/* Instrucciones estaticas para toda resolución */
 
 /* Header*/
 
-    /* General*/
+    /* General del header */
 
     
     header{
@@ -41,49 +39,101 @@ h3{
     /* Especificos*/
 
 
-        /* Parte más alta del header*/
+        /* Parte más alta del header */
 
-        header.HeaderUp p {
+        div.HeaderUp{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5%;
+        }
+
+        header div.HeaderUp p {
             width: 100%;
             text-align: center;
             margin-top: 10px;
         }
 
+        /* Logo  y formulario*/
+
+        header div.logo,
+        header div.form{
+            width: 50%;
+        }
+
+            /*  Logo  */
+
+                header div.logo{
+                    padding: 10px;
+                }
+
+            /*  Formulario  */
+
+                header .form{
+                    display: flex;
+                    align-items: center;
+                    padding: 2px;
+                    font-size: 11px;
+                }
+
+                /*  Formulario especifico  */
+                
+                    header .form .input{
+                        background-color: #FFF;
+                        border: 1px solid #000;
+                        outline: none;
+                        color: #666;
+                        padding: 2px;
+                    }
+
+                    header .form .submit{
+                        background-color: #FFF;
+                        border: 1px solid #000;
+                        color: #666;
+                        width: 10%;
+                    }
+
+            
+     
         /* Barra de navegación*/
 
-        li a {
-            text-decoration: none;
-            color: #03264C;
-            font-size:12px;
-        }
 
-        ul {
-            list-style: none;
-        }
+        /* General*/    
+
+            header nav{
+                font-size: 12px;
+                margin-left: 20px;
+            }    
+
+            /* Especifico */
+
+                header nav ul li {
+                    list-style: none;
+                }
 
 
-        li a i {
-            font-size: 2em;
-            color: #03264C;
-        }
-
-        /* Burguer menu*/
-
-        div.burger-menu{
-            text-align: center;
-        }
+                header nav ul li a {
+                    text-decoration: none;
+                    color: #03264C;
+                }
 
         
-        div.burger-menu i{
-            background-color: #0044AA;
-            border-radius: 5px;
-            color: #FFF;
-            font-size: 20px;
-            height: 40px;
-            margin: 10px 0px 20px 0px;
-            padding: 10px;
-            width: 40px;
-        }
+        /* Burguer menu*/
+
+            div.burger-menu{
+                text-align: center;
+            }
+
+            
+            div.burger-menu i{
+                background-color: #0044AA;
+                border-radius: 5px;
+                color: #FFF;
+                font-size: 20px;
+                height: 40px;
+                margin: 10px 0px 20px 0px;
+                padding: 10px;
+                width: 40px;
+            }
 
 /* banner */
 
@@ -96,23 +146,65 @@ h3{
 /* main*/
 
     /* General*/
-    article div i {
-        font-size: 2em;
-        color: #03264C;
-    }   
-    
-    /* Especificos*/
-    
-    .precio{
-        font-size: 18px;
-        width: 30%;
-    }
-    
-    .descuento,
-    .descripcion{
-    font-size: 16px;
-    font-weight: normal;
-    }
+
+        main{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+   
+        main section h3{
+            margin: 20px 0px;
+        }
+
+        main section article{
+            background-color: #fff;    
+            margin: 10px 0px;
+        }
+
+        main section article img{
+            width: 100%;
+        }
+
+        main section article i,
+        .descuento{
+        color: #39b54a;
+        }
+
+        article div i {
+            font-size: 2em;
+            color: #03264C;
+        }
+
+        /* última visita y rebajas */
+
+        .precio{
+            font-size: 18px;
+            width: 30%;
+        }
+        
+        .descuento{
+
+            width: 70%;
+        }
+
+
+        .descuento,
+        .descripcion{
+        font-size: 16px;
+        font-weight: normal;
+        }
+
+        .description{
+        color: #666;
+        }
+
+         /* última visita */
+
+        
+           
+  
+        
 
         /* Productos */
 
@@ -149,3 +241,5 @@ h3{
     /* Especificos*/
 
 
+ /* Parte ajustable dependiendo de la resolucion*/    
+     
