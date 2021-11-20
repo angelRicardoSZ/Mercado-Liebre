@@ -68,8 +68,12 @@ h3{
 
                 header div.logo{
                     padding: 10px;
+                    
                 }
 
+                .logo{
+                    animation: aumentar 1s linear infinite normal;
+                }
             /*  Formulario  */
 
                 header .form{
@@ -166,6 +170,11 @@ h3{
         main section article{
             background-color: #fff;    
             margin: 10px 0px;
+            transition: box-shadow ease-in 0.5s;
+        }
+
+        main section article:hover {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
         }
 
         main section article img{
@@ -190,6 +199,15 @@ h3{
             border-top: 1px solid #ebebeb;
             position: relative;
             padding: 15px;
+            background-color: rgba(0,0,0,0.5);
+            color: #fff;
+        }
+
+
+
+        main section article .articulo-info .descripcion{
+            opacity: 0;
+            transition: opacity 0.5s;
         }
 
         main section article i{
@@ -233,6 +251,13 @@ h3{
         color: #666;
         }
 
+        /* fas fa-truck  */ 
+        main section article .articulo-info .fas.fa-truck{
+            transition: transform 0.5s;
+        }
+        
+
+
          /* última visita */
 
         
@@ -275,50 +300,24 @@ h3{
     /* Especificos*/
 
 
- /* Diseño responsivo*/    
-
  
-@media (min-width: 361px){
-    main section article .descripcion{
-        display: block;
-    }
 
-    main section article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
 
-    main section div.productos{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    main section div.productos article{
-        width: 45%;
-    }
 
-    .precio,
-    .descuento{
-        width: 50%;
-    }
+/* Animaciones */
+main section  article:hover .articulo-info .descripcion{
+    opacity: 1;
 }
 
-@media (min-width: 769px){
-    main section div.productos article{
-        width: 22%;
-    }
-
-    div.HeaderUp p {
-      flex-grow: 0.5;
-    }
-
-    div.HeaderUp  {
-      flex-wrap: nowrap;
-    }
+main section article .articulo-info .fas.fa-truck:hover{
+    transform: rotate(-90deg);
 }
 
-
-
-
+@keyframes aumentar{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
