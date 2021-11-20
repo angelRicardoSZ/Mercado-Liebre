@@ -60,7 +60,6 @@ main{
             }
 
             button{
-                background-color: #EAC926;
                 color: #03264C;
                 border: none;
                 height: 36px;
@@ -70,8 +69,14 @@ main{
             }
 
 
+            button{
+                background: linear-gradient(#EAC926, #cdad0c);
+            }
 
-
+            button:hover{
+                background:linear-gradient(#0022AA, #011255) ;
+                color: white;
+            }
 
 
 
