@@ -56,8 +56,14 @@ main{
             input{
                 border: 1px solid #ccd0d5;
                 border-radius: 6px;
-                padding: 8px;
+                padding: 10px;
             }
+
+            input.box{
+                width: 80%;
+            }
+
+            
 
             button{
                 background-color: #EAC926;

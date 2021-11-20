@@ -33,6 +33,10 @@ h3{
     
     header{
         background-color: #EAC926;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        top: 0;
     }
     
 
@@ -137,8 +141,10 @@ h3{
 
 /* banner */
 
+
     section.banner img{
         width: 100%;
+        margin-top: 300px;
     }
 
 

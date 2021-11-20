@@ -47,34 +47,34 @@
 
                 <form action="/register">
                     <div>
-                        <input placeholder="Coloca tu nombre" type="text" name="nombre" minlength="8">
+                        <input placeholder="Coloca tu nombre" type="text" name="nombre" minlength="8" class="box">
                     </div>
             
                     <div>
-                        <input placeholder="Nombre Usuario" type="text" name="nUsuario" minlength="5">
+                        <input placeholder="Nombre Usuario" type="text" name="nUsuario" minlength="5" class="box">
                     </div>
             
                     <div>
-                        <input placeholder="dd/mm/aaaa" type="date" name="fechanac" required >
+                        <input placeholder="dd/mm/aaaa" type="date" name="fechanac" required class="box">
                     </div>
             
                     <div>
-                        <input placeholder="Coloca tu domicilio" type="text" name="domicilio">
+                        <input placeholder="Coloca tu domicilio" type="text" name="domicilio" class="box">
                     </div>
 
                     <div>
-                        <input placeholder="Correo electrónico" type="text" name="nombre" minlength="8">
+                        <input placeholder="Correo electrónico" type="text" name="nombre" minlength="8" class="box">
                     </div>
             
+                    
                     <div>
-                        <label>¿Qué te gustaría?</label>
-                    </div>
-
-                    <div>
-                        <label for="vendedor">Vender</label>
+                        <label for="vendedor">Quiero vender</label>
                         <input type="radio" name="tipousr" value="Vendedor" id="vendedor"></input>
-                        <label for="comprador">Comprar</label>
+                        <label for="comprador">Quiero Comprar</label>
                         <input type="radio" name="tipousr" value="comprador" id="comprador"></input>
+                        <label for="Ambos">Ambos</label>
+                        <input type="radio" name="tipousr" value="Ambos" id="Ambos"></input>
+
                     </div>
             
                     <div>
@@ -112,19 +112,19 @@
             
                     <div>
                         <label>Seleccionar una imagen para el perfil:
-                        <input type="file" name="avatar" accept=".jpg" multiple >
+                        <input type="file" name="avatar" accept=".jpg" multiple class="box" >
                         </label>
                     </div>
             
                     <div>
 
-                        <input type="password" placeholder="Contraseña"  name="password" id="password" minlength="8">
+                        <input type="password" placeholder="Contraseña"  name="password" id="password" minlength="8" class="box">
                             
                     </div>
 
                     <div>
                         
-                        <input type="password" placeholder="Confirmar contraseña" name="confirm_password" id="confirm_password" minlength="8">
+                        <input type="password" placeholder="Confirmar contraseña" name="confirm_password" id="confirm_password" minlength="8" class="box">
                         <input type="submit" value="Confirmar">         
                         
                     </div>
