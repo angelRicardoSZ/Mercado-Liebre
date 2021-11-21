@@ -1,0 +1,342 @@
+/* Caracterisitcas para todo la página */
+
+
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+ 
+p{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+    color: #666;
+}
+
+
+/* Instrucciones estaticas para toda resolución */
+
+/* Header*/
+
+    /* General del header */
+
+    
+    header{
+        background-color: #EAC926;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+    }
+    
+
+    /* Especificos*/
+
+
+        /* Parte más alta del header */
+
+        div.HeaderUp{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5%;
+        }
+
+        header div.HeaderUp p {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Logo  y formulario*/
+
+        header div.logo,
+        header div.form{
+            width: 50%;
+        }
+        
+
+            /*  Logo  */
+
+                header div.logo{
+                    padding: 10px;
+                    
+                }
+
+                .logo{
+                    animation: aumentar 1s linear infinite normal;
+                }
+            /*  Formulario  */
+
+                header .form{
+                    display: flex;
+                    align-items: center;
+                    padding: 2px;
+                    font-size: 11px;
+                }
+
+                /*  Formulario especifico  */
+                
+                    header .form .input{
+                        background-color: white;
+                        border: 1px solid #0044AA;
+                        outline: none;
+                        color: black;
+                        padding: 10px;
+                        border-radius: 4px;
+                        margin-right: 4px;
+                    }
+
+                    header .form .submit{
+                        background-color: #EAC926;
+                        
+                        color: black;
+                        width: 10%;
+                        padding: 10px;
+                    }
+
+            
+     
+        /* Barra de navegación*/
+
+
+        /* General*/    
+
+            header nav{
+                font-size: 12px;
+                margin-left: 20px;
+            }    
+
+            /* Especifico */
+
+                header nav ul li {
+                    list-style: none;
+                }
+
+
+                header nav ul li a {
+                    text-decoration: none;
+                    color: #03264C;
+                }
+
+
+        /* Burguer menu*/
+
+            div.burger-menu{
+                text-align: center;
+            }
+
+            
+            div.burger-menu i{
+                background-color: #0044AA;
+                border-radius: 5px;
+                color: #FFF;
+                font-size: 20px;
+                height: 40px;
+                margin: 10px 0px 20px 0px;
+                padding: 10px;
+                width: 40px;
+            }
+
+/* banner */
+
+
+    section.banner img{
+        width: 100%;
+        margin-top: 300px;
+    }
+
+
+
+/* main*/
+
+    /* General*/
+
+        main{
+            width: 90%;
+            margin: 0 auto;
+        }
+
+   
+        main section h3{
+            margin: 20px 0px;
+        }
+
+        main section article{
+            background-color: #fff;    
+            margin: 10px 0px;
+            transition: box-shadow ease-in 0.5s;
+        }
+
+        main section article:hover {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+
+        main section article img{
+            width: 100%;
+        }
+
+        main section article i,
+        .descuento{
+        color: #39b54a;
+        }
+
+        article div i {
+            font-size: 2em;
+            color: #03264C;
+        }
+
+        main article div.articulo-info{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            border-top: 1px solid #ebebeb;
+            position: relative;
+            padding: 15px;
+            background-color: rgba(0,0,0,0.5);
+            color: #fff;
+        }
+
+
+
+        main section article .articulo-info .descripcion{
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        main section article i{
+            display: block;
+            font-size: 16px;
+            padding: 5px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid #39b54a;
+            background-color: #FFF;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            top: -15px;
+        }
+
+       
+        
+
+
+        /* última visita y rebajas */
+
+        .precio{
+            font-size: 18px;
+            width: 30%;
+        }
+        
+        .descuento{
+
+            width: 70%;
+        }
+
+
+        .descuento,
+        .descripcion{
+        font-size: 16px;
+        font-weight: normal;
+        }
+
+        .description{
+        color: #666;
+        }
+
+        /* fas fa-truck  */ 
+        main section article .articulo-info .fas.fa-truck{
+            transition: transform 0.5s;
+        }
+        
+
+
+         /* última visita */
+
+        
+           
+  
+        
+
+        /* Productos */
+
+
+    
+        /* rebajas*/
+
+        footer div h3, footer div p{
+            margin: 5px 0px;
+        }
+
+/* Footer*/
+
+    /* General*/
+
+
+    footer {
+        background-color: white;
+        text-align: center;
+        display: flex;
+
+    }
+
+    footer div {
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        padding: 15px;
+    }
+
+    
+    footer div i {
+        font-size: 18px;
+        color: #1259c3;
+        transition: color 0.5s;
+    }
+    
+    /* Especificos*/
+     
+    .derechos{
+        font-size: 24px;
+        color: #666;
+        margin: 20px 0px;
+        text-align: center;
+    }
+
+ 
+
+
+
+/* Animaciones */
+main section  article:hover .articulo-info .descripcion{
+    opacity: 1;
+}
+
+main section article .articulo-info .fas.fa-truck:hover{
+    transform: rotate(-90deg);
+}
+footer div i:hover {
+    color: #dddb55;
+}
+
+
+@keyframes aumentar{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}

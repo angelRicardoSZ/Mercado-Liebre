@@ -1,0 +1,85 @@
+/* Propiedades generales de toda la página*/
+
+
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+}
+
+/* header  */
+
+header{
+    background-color: #EAC926;
+}
+
+/* main */
+
+ 
+main{
+    width: 60%;
+    margin: 0 auto;
+}   
+
+    /* Box-form */
+
+    main section.Box-form{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        text-align: center;
+        border-radius: 10px;
+        margin: 20px 0px;
+    }
+
+
+        /* button-form */
+
+
+
+        /* register-input */
+            h1{
+                color: #03264C;
+            }
+
+            main section div.register-input div{
+                margin-bottom: 12px;
+            }
+
+            input{
+                border: 1px solid #ccd0d5;
+                border-radius: 6px;
+                padding: 8px;
+            }
+
+            button{
+                color: #03264C;
+                border: none;
+                height: 36px;
+                min-width: 130px;
+                border-radius: 6px;
+                background: linear-gradient(#EAC926, #cdad0c);
+            }
+
+
+            button{
+                background: linear-gradient(#EAC926, #cdad0c);
+            }
+
+            button:hover{
+                background:linear-gradient(#0022AA, #011255) ;
+                color: white;
+            }
+
+
+
+
+
+
