@@ -75,6 +75,15 @@ main{
                 background: linear-gradient(#EAC926, #cdad0c);
             }
 
+            
+            button{
+                background: linear-gradient(#EAC926, #cdad0c);
+            }
+
+            button:hover{
+                background:linear-gradient(#0022AA, #011255) ;
+                color: white;
+            }
 
 
 

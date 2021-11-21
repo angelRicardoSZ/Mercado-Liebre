@@ -63,6 +63,7 @@ h3{
         header div.form{
             width: 50%;
         }
+        
 
             /*  Logo  */
 
@@ -86,18 +87,21 @@ h3{
                 /*  Formulario especifico  */
                 
                     header .form .input{
-                        background-color: #FFF;
-                        border: 1px solid #000;
+                        background-color: white;
+                        border: 1px solid #0044AA;
                         outline: none;
-                        color: #666;
-                        padding: 2px;
+                        color: black;
+                        padding: 10px;
+                        border-radius: 4px;
+                        margin-right: 4px;
                     }
 
                     header .form .submit{
-                        background-color: #FFF;
-                        border: 1px solid #000;
-                        color: #666;
+                        background-color: #EAC926;
+                        
+                        color: black;
                         width: 10%;
+                        padding: 10px;
                     }
 
             
@@ -124,7 +128,7 @@ h3{
                     color: #03264C;
                 }
 
-        
+
         /* Burguer menu*/
 
             div.burger-menu{
@@ -271,7 +275,9 @@ h3{
     
         /* rebajas*/
 
-
+        footer div h3, footer div p{
+            margin: 5px 0px;
+        }
 
 /* Footer*/
 
@@ -281,6 +287,8 @@ h3{
     footer {
         background-color: white;
         text-align: center;
+        display: flex;
+
     }
 
     footer div {
@@ -293,12 +301,19 @@ h3{
 
     
     footer div i {
-        font-size: 2em;
+        font-size: 18px;
         color: #1259c3;
+        transition: color 0.5s;
     }
     
     /* Especificos*/
-
+     
+    .derechos{
+        font-size: 24px;
+        color: #666;
+        margin: 20px 0px;
+        text-align: center;
+    }
 
  
 
@@ -312,6 +327,10 @@ main section  article:hover .articulo-info .descripcion{
 main section article .articulo-info .fas.fa-truck:hover{
     transform: rotate(-90deg);
 }
+footer div i:hover {
+    color: #dddb55;
+}
+
 
 @keyframes aumentar{
     0% {
